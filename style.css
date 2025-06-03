@@ -6,7 +6,6 @@ body{
 #main-Container{
 
     min-height:100vh;
-    border:10px solid red;
     padding:10px;
     box-sizing: border-box; /* Includes padding and border in element dimensions rather than adding extra */
     display:flex;
@@ -15,7 +14,6 @@ body{
 #heading-Container{
     flex:none; /* this line and the 'min-height' make sure the container Doesn't grow or shrink the size based on content */
     min-height:80px;
-    border:5px solid green;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -24,7 +22,6 @@ body{
 
 #card-Container{
     flex:1;
-    border:5px solid blue;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -39,7 +36,7 @@ body{
     flex: 0 0 300px; /* Don't grow, don't shrink, 300px base */
     min-width: 250px;
     max-width: 350px;
-    border: 2px solid olive;
+    border: 2.5px dotted  mediumvioletred;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -50,13 +47,11 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    border:2px yellow solid;
     padding:15px;
 
 
 }
 .name-Container{
-     border:2px pink solid;
      flex:none;
      min-height:30px;
      display:flex;
@@ -65,7 +60,6 @@ body{
 }
 
 .image-Container > img{
-    border:2px purple solid;
     max-width: 100%; /* Prevents overflow */
     max-height: 100%;
     width: 270px;

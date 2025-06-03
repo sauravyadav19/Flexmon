@@ -47,6 +47,7 @@ body{
     justify-content:center;
     align-items:center;
     border:2px yellow solid;
+    padding:15px;
 
 
 }
@@ -54,7 +55,9 @@ body{
      border:2px pink solid;
      flex:none;
      min-height:30px;
-
+     display:flex;
+     justify-content:center;
+     align-items:center;
 }
 
 .image-Container > img{

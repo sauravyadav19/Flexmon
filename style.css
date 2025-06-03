@@ -16,6 +16,10 @@ body{
     flex:none; /* this line and the 'min-height' make sure the container Doesn't grow or shrink the size based on content */
     min-height:80px;
     border:5px solid green;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
 }
 
 #card-Container{

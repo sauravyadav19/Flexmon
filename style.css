@@ -78,5 +78,7 @@ h1{
     background-color:blue;
     height:100vh;
     width:100vw;
+    display:none; /*hiding it*/
+    pointer-events:none; /* allows interaction with elements below */
 
 }

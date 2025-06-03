@@ -87,8 +87,17 @@ h1{
     */
 
 }
+.card-on-hover {
+  transform: scale(1.15) rotateZ(-1deg);
+  border: 2px solid gold;
+  background: linear-gradient(135deg, #fffacd, #ffffe0);
+  box-shadow: 0 10px 25px rgba(255, 255, 100, 0.6), 0 0 15px rgba(255, 255, 160, 0.4);
+  border-radius: 15px;
 
-.card-on-hover{
-    transform:scale(1.5);
-    background-color:yellow;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border 0.3s ease-in-out,
+    background 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out,
+    border-radius 0.4s ease;
 }

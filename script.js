@@ -2,6 +2,8 @@ import pokemonDataset from './pokemonDataset.js';
 
 for(let pokemon of pokemonDataset){
 
+    setTimeout(()=>{
+
     const individualCard = document.createElement("div");
     individualCard.setAttribute('class','individualCard');
 
@@ -17,8 +19,7 @@ for(let pokemon of pokemonDataset){
     individualCard.append(name);
     document.querySelector('#card-Container').append(individualCard);
 
-
-}
+},(pokemon['id'])*1000)};
 const cardContainer = document.querySelector("#card-Container");
 const overlay = document.querySelector("#overlay");
 let currentHoverCard = null;

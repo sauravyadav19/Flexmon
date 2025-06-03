@@ -80,5 +80,10 @@ h1{
     width:100vw;
     display:none; /*hiding it*/
     pointer-events:none; /* allows interaction with elements below */
+    z-index: 100;
+    /*z-index is a CSS property that controls the stacking order of elements on a webpage —
+    in other words, what appears in front and what appears behind when elements overlap.
+    higher the z-index the element would appear on top; works on position(fixed,realtive,absoulute) elements
+    */
 
 }

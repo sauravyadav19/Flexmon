@@ -71,3 +71,34 @@ body{
 h1{
     font-size:2.5em;
 }
+#overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.6);
+    height:100vh;
+    width:100vw;
+    display:none; /*hiding it*/
+    pointer-events:none; /* allows interaction with elements below */
+    z-index: 100;
+    /*z-index is a CSS property that controls the stacking order of elements on a webpage —
+    in other words, what appears in front and what appears behind when elements overlap.
+    higher the z-index the element would appear on top; works on position(fixed,realtive,absoulute) elements
+    */
+
+}
+.card-on-hover {
+  transform: scale(1.15);
+  border: 2px solid gold;
+  background: linear-gradient(135deg, #fffacd, #ffffe0);
+  box-shadow: 0 10px 25px rgba(255, 255, 100, 0.6), 0 0 15px rgba(255, 255, 160, 0.4);
+  border-radius: 15px;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border 0.3s ease-in-out,
+    background 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out,
+    border-radius 0.4s ease;
+    cursor: pointer;
+
+}

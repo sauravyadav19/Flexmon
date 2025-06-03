@@ -1,6 +1,8 @@
 body{
     margin:0px;
     font-family: 'Minecraft', sans-serif;
+    text-transform:uppercase;
+
 }
 
 #main-Container{

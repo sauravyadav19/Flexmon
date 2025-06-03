@@ -2,3 +2,22 @@ body{
     margin:0px;
     font-family: 'Minecraft', sans-serif;
 }
+
+#main-Container{
+
+    min-height:100vh;
+    border:10px solid red;
+    padding:10px;
+    box-sizing: border-box; /* Includes padding and border in element dimensions rather than adding extra */
+    display:flex;
+    flex-direction:column;
+}
+#heading-Container{
+    flex:0.1;
+    border:5px solid green;
+}
+
+#card-Container{
+    flex:1;
+    border:5px solid blue;
+}

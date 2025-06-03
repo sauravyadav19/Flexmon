@@ -25,12 +25,20 @@ let currentHoverCard = null;
 
 
 cardContainer.addEventListener('mouseenter',function(event){
-
     const card = event.target.closest('.individualCard');
     if(card&& cardContainer.contains(card)){
         overlay.style.display = 'block';
         card.classList.add('card-on-hover');
         card.style.zIndex = 101;
         currentHoverCard = card;
+    }
+    },{capture:true});
+
+cardContainer.addEventListener('mouseleave',function(event){
+    const card = event.target.closest('.individualCard');
+    if(card&& card == currentHoverCard){
+        overlay.style.display = 'none';
+        card.classList.remove('card-on-hover');
+        card.style.zIndex = '';
     }
     },{capture:true});
